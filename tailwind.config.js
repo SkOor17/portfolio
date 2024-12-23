@@ -13,6 +13,10 @@ export default {
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
       },
+      fontSize: {
+        'custom-l': '2rem',   
+        'custom-xl': '2.5rem',  
+      },
     },
   },
   plugins: [],

@@ -19,3 +19,9 @@ body {
     font-weight: bold;
     font-size: 24px;
 }
+
+.bigTitle {
+    font-family: 'Oswald', serif;
+    font-weight: bold;
+    font-size: 40px;
+}
