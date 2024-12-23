@@ -6,7 +6,7 @@ export default function MainLayout({ children } :
 {children : ReactElement}
 ) {
     return (
-        <div>
+        <div className="px-6">
             <Header/>
             <main>
                 {children}

@@ -1,14 +1,9 @@
-import TextUnderline from "../components/TextUnderline";
+import HeroSection from "../components/HeroSection";
 
 export default function Home() {
   return (
-    <div className="inline-flex">
-        <div>
-          Test du text underline
-        </div>
-        <TextUnderline className="absolute top-4 left-0">
-          portfolio
-        </TextUnderline>
+    <div className="w-full">
+        <HeroSection/>
     </div>
   )
 }
