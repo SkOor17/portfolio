@@ -1,5 +1,9 @@
+import TextUnderline from "../components/TextUnderline";
+
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      Test du text underline : <TextUnderline>portfolio</TextUnderline>
+    </div>
   )
 }
