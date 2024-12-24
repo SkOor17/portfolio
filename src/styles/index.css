@@ -6,7 +6,8 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #c34a4d
+    --primary-color: #c34a4d;
+    --secondary-color: #eaeaea;
 }
 
 body {
