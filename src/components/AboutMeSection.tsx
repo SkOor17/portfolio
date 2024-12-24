@@ -13,7 +13,7 @@ export default function AboutMeSection() {
                     Ces passions m’inspirent dans mon travail, en combinant rigueur technique, esprit d’équipe et sens du détail pour relever chaque défi avec style et efficacité.
                 </p>
                 <div className="w-full flex justify-center md:w-fit">
-                    <img className="h-full md:max-h-[calc(65vh)] max-w-[calc(40vh)] rounded-md" src="/assets/Tennis.JPG" alt="" />
+                    <img className="h-fit md:max-h-[calc(65vh)] max-w-[calc(40vh)] rounded-md" src="/assets/Tennis.JPG" alt="" />
                 </div>
             </div>
         </div>

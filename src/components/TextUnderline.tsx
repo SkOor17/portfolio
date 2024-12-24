@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-export default function TextUnderline({ children, className, spacing }:
+export default function TextUnderline({ children, className, spacing}:
 {children: string, className?: string, spacing?: string}
 ) {
   return (
@@ -14,7 +14,7 @@ export default function TextUnderline({ children, className, spacing }:
             viewBox="0 0 93 14" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
-            className={className}
+            className={className + " absolute"}
         >
             <motion.path
                 initial={{pathLength: 0}}
