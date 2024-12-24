@@ -12,7 +12,7 @@ export default function ProjectsSection() {
   }  
 
   return (
-    <div className="flex flex-col gap-6 py-3">
+    <div id="projects" className="flex flex-col gap-6 py-3 scroll-mt-16">
         <TitleSection>Projects</TitleSection>
         <div className="w-full flex justify-center">
           <div className="w-fit flex flex-col items-end gap-6">

@@ -4,7 +4,7 @@ import TitleSection from "./TitleSection";
 
 export default function SkillsSection() {
   return (
-    <div className="py-3 flex flex-col md:gap-6">
+    <div id="skills" className="py-3 flex flex-col gap-6 scroll-mt-16">
         <TitleSection>Skills.</TitleSection>
         <div className="flex flex-col gap-4 md:items-center">
             <p className="text-lg w-fit">Technical skills</p>

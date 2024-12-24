@@ -2,7 +2,7 @@ import TitleSection from "./TitleSection";
 
 export default function AboutMeSection() {
   return (
-    <div id="about">
+    <div id="about" className="scroll-mt-16 py-3">
         <TitleSection>About me</TitleSection>
         <div className="flex w-full justify-center">
             <div className="flex flex-col py-6 gap-6 w-fit md:flex-row md:justify-center md:gap-[15vh]">
