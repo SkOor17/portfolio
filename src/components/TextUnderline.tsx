@@ -9,7 +9,7 @@ export default function TextUnderline({ children, className, spacing, size}:
     switch (size) {
         case "xl":
             res = 
-            <span className={`relative ${spacing ? `ml-${spacing}` : "ml-2"}`}>
+            <span className={`relative ${spacing ? `mx-${spacing}` : "mx-2"}`}>
 
                 {children}
                 <svg width="131" height="15" viewBox="0 0 131 15" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ export default function TextUnderline({ children, className, spacing, size}:
     
         default:
             res = 
-            <span className={`relative ${spacing ? `ml-${spacing}` : "ml-2"}`}>
+            <span className={`relative ${spacing ? `mx-${spacing}` : "mx-2"}`}>
                 {children}
 
                 <svg 

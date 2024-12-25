@@ -26,7 +26,7 @@ export default function Button(
     const buttonStyles = `${baseStyles} ${type === "primary" ? primaryStyles : secondaryStyles}`;
 
     return (
-        <div className="transition-transform transform hover:scale-105 py-3">
+        <div className="w-fit transition-transform transform hover:scale-105 py-3">
             <Link 
                 onClick={link?.startsWith("#") ? handleClick : undefined} 
                 to={!link ? "" : link} 
