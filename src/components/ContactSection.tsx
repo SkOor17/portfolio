@@ -23,7 +23,7 @@ export default function ContactSection() {
             <div className="flex flex-col gap-2">
                 <Link 
                     to="https://github.com/SkOor17" 
-                    className="w-fit flex gap-2 items-center"
+                    className="w-fit flex gap-2 items-center "
                 >
                     <GithubIcon/>
                     <p>Github</p>
