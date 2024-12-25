@@ -8,11 +8,13 @@ import MainLayout from './layouts/MainLayout';
 export default function App() {
     return (
       <Routes>
-        <Route path="/" element={<MainLayout><Home /></MainLayout>} />
-        <Route path="/projects" element={<MainLayout><Projects /></MainLayout>} />
-        <Route path="/project/:projectId" element={<MainLayout><Project /></MainLayout>} />
-        <Route path="/project/*" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:projectId" element={<Project />} />
+          <Route path="/project/*" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
       </Routes>
     )
 }
