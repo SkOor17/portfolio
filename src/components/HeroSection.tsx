@@ -28,7 +28,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="max-w-[calc(40vh)] w-full lg:max-w-none lg:w-3/4 pb-6 flex justify-end items-center">
-        <Button link="#about" type="primary">
+        <Button link="/#about" type="primary">
           Tout découvrir
         </Button>
       </div>

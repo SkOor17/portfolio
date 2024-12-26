@@ -5,23 +5,23 @@ export default function ScrollToAnchor() {
   const location = useLocation();
 
   useEffect(() => {
-    // 1. Réinitialiser la position du défilement à 0,0 lors du changement de page
-    window.scrollTo(0, 0);
+    const anchorId = location.hash; // Ex: "#about"
 
-    // 2. Vérifier s'il y a un hash dans l'URL (ex: /#about)
-    const anchorId = location.hash;
     if (anchorId) {
+      // Si un hash est présent, on défile directement vers l'élément correspondant
       const element = document.querySelector(anchorId);
       if (element) {
-        // Défilement fluide vers l'élément
+        console.log('Scrolling to:', anchorId, element);
         element.scrollIntoView({
           behavior: 'smooth',
-          block: 'start', // Alignement au début de l'élément
+          block: 'start',
         });
       }
+    } else {
+      // Sinon, on remet la page en haut
+      window.scrollTo(0, 0);
     }
-  }, [location]); // Effectuer ce code à chaque changement de route
+  }, [location]);
 
   return null;
 }
-

@@ -26,14 +26,18 @@ export default function ContactSection() {
                     className="w-fit flex gap-2 items-center "
                 >
                     <GithubIcon/>
-                    <p>Github</p>
+                    <p className="relative after:content-[''] after:block after:h-[1px] after:bg-black after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left">
+                        Github
+                    </p>
                 </Link>
                 <Link 
                     to="https://www.linkedin.com/in/thomas-carfantan-529585329/" 
                     className="w-fit flex gap-2 items-center"
                 >
                     <LinkedinIcon/>
-                    <p>Linkedin</p>
+                    <p className="relative after:content-[''] after:block after:h-[1px] after:bg-black after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left">
+                        Linkedin
+                    </p>
                 </Link>
             </div>
         </div>
