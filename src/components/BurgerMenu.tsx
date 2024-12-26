@@ -3,8 +3,8 @@ import NavIcon from "../assets/NavIcon"
 import CrossIcon from "../assets/CrossIcon"
 import NavLinks from "./NavLinks"
 
-export default function BurgerMenu({className} : {className?:string}) {
-    const [isActiv, setIsActiv] = useState(false)
+export default function BurgerMenu({className, links} : {className?:string, links:Map<string, string>}) {
+    const [isActiv, setIsActiv] = useState(false) 
 
     const handleClick = () => {
         setIsActiv(!isActiv)
@@ -17,7 +17,7 @@ export default function BurgerMenu({className} : {className?:string}) {
             :
             <div>
                 <CrossIcon/>
-                <NavLinks className="absolute top-[61px] left-0 w-full border-b border-black py-5"/>
+                <NavLinks links={links} className="absolute top-[61px] left-0 w-full border-b border-black py-5"/>
             </div>
         }
     </div>

@@ -13,20 +13,19 @@ export default function Projects() {
       <div>
         <div >
           <div className="inline-flex">
-            <p className="title !font-normal">Je vous présente tous mes </p>
+            <p className="title !font-normal">Voici tous mes </p>
             <p className="title !font-normal">
               <TextUnderline className="top-7 -left-1">
                 projets
               </TextUnderline>
             </p>
           </div>
-          <p className="title !font-normal">dans cette page.</p>
         </div>
       </div>
 
       <div className='flex flex-col gap-6'>
         <TitleSection>Scolaires.</TitleSection>
-        <div className='flex flex-col gap-6 w-full items-center lg:flex-row lg:justify-center'>
+        <div className='flex flex-wrap flex-col gap-6 w-full items-center md:flex-row'>
           {projetsScolaires.map((projet) => (
             <CardProject key={projet.id} id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
           ))}
@@ -35,7 +34,7 @@ export default function Projects() {
 
       <div className='flex flex-col gap-6'>
         <TitleSection>Personels.</TitleSection>
-        <div className='flex flex-col gap-6 w-full items-center lg:flex-row lg:justify-center'>
+        <div className='flex flex-wrap flex-col gap-6 w-full items-center md:flex-row'>
           {projetsPerso.map((projet) => (
             <CardProject key={projet.id} id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
           ))}

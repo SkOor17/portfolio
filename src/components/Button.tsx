@@ -12,8 +12,8 @@ export default function Button(
         
             if (element) {
                 element.scrollIntoView({
-                behavior: "smooth", // Animation fluide
-                block: "start", // Alignement au début de l'élément
+                behavior: "smooth",
+                block: "start",
                 });
             }
         }
@@ -21,7 +21,7 @@ export default function Button(
 
     const baseStyles = "py-3 px-8 w-fit h-fit rounded"
     const primaryStyles = "bg-primary text-white hover:bg-[#b23d3f]"
-    const secondaryStyles = "text-primary border border-primary"
+    const secondaryStyles = "text-primary border border-primary hover:bg-primary hover:text-white transition-all duration-200"
 
     const buttonStyles = `${baseStyles} ${type === "primary" ? primaryStyles : secondaryStyles}`;
 

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { projects } from '../data/datas';
+import { ProjectType, projects } from '../data/datas';
 import Button from '../components/Button';
 import TitleSection from '../components/TitleSection';
 import CardProject from '../components/CardProject';
@@ -15,12 +15,22 @@ export default function Project() {
 
     if (projet === undefined) return (<NotFound/>)
 
-    const otherProjects = []
-    for (let index = 0; otherProjects.length < 3; index++) {
-        if (projects[index].id !== projectIdNum) {
-            otherProjects.push(projects[index])
+    const otherProjects : Array<ProjectType> = []
+
+    function getRandomInt(min:number, max:number): number {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    while (otherProjects.length < 3) {
+        const id = getRandomInt(0,projects.length-1)
+        
+        if (id !== projectIdNum-1 && !otherProjects.includes(projects[id])) {
+            otherProjects.push(projects[id])
         }
     }
+
+    console.log(otherProjects.length);
+    
 
     return (
         <div className='flex flex-col py-6 gap-8 h-full'>
@@ -52,7 +62,7 @@ export default function Project() {
 
             <div className='flex flex-col gap-6'>
                 <TitleSection>Voir quelques autres projets.</TitleSection>
-                <div className='flex flex-col gap-6 w-full items-center lg:flex-row lg:justify-center'>
+                <div className='flex flex-col gap-6 w-full items-center md:flex-row'>
                     {otherProjects.map((projet) => (
                         <CardProject key={projet.id} id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
                     ))}

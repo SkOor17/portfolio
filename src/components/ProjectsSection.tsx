@@ -16,7 +16,7 @@ export default function ProjectsSection() {
       <TitleSection>Projects</TitleSection>
       <div className="w-full flex justify-center">
         <div className="w-fit flex flex-col items-end gap-6">
-          <ul className="flex flex-col gap-6 items-center lg:flex-row lg:justify-center">
+          <ul className="flex flex-col gap-6 items-center lg:flex-row">
             {projectsDisplay.map((projet) => (
               <li key={projet.id}>
                 <CardProject

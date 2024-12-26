@@ -10,7 +10,7 @@ export default function Header(
 	return (
 		<div className="sticky top-0 bg-white z-10 py-3 border-b border-black flex items-center justify-between w-full">
 			<Link to="/" className="title cursor-pointer">Thomas Carfantan</Link>
-			<BurgerMenu className="md:hidden"/>
+			<BurgerMenu links={links} className="md:hidden"/>
 			<NavLinks links={links} className="hidden md:flex"/>
 		</div>
 	)
