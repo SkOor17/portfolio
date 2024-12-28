@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Button from "./Button";
 import TextUnderline from "./TextUnderline";
 
@@ -19,13 +20,21 @@ export default function HeroSection() {
             </p>
           </div>
         </div>
-        <div className="w-3/4 flex justify-center lg:w-fit">
+        <motion.div 
+          className="w-3/4 flex justify-center lg:w-fit"
+          initial={{opacity: 0, y: 50}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{
+              duration: 0.75,
+              ease: "easeInOut",
+          }}
+        >
           <img
             className="h-full lg:max-h-[calc(60vh)] max-w-[calc(40vh)] rounded-lg"
             src="/assets/heroImg.jpg"
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
       <div className="max-w-[calc(40vh)] w-full lg:max-w-none lg:w-3/4 pb-6 flex justify-end items-center">
         <Button link="/#about" type="primary">

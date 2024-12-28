@@ -5,6 +5,8 @@ import { Outlet } from "react-router-dom";
 export default function MainLayout() {
     const links = new Map<string, string>([
 		['home', '/'],
+		['scolaires', '/projects#scolaires'],
+		['personnels', '/projects#perso'],
 	  ]);
     
     return (

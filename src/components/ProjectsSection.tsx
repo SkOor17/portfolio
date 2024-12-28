@@ -2,8 +2,10 @@ import CardProject from "./CardProject";
 import TitleSection from "./TitleSection";
 import { projects } from "../data/datas";
 import Button from "./Button";
+import { motion} from "motion/react";
 
 export default function ProjectsSection() {
+  const width = window.innerWidth;
   const projectsDisplay = [];
 
   for (let index = 0; index < 3; index++) {
@@ -16,9 +18,19 @@ export default function ProjectsSection() {
       <TitleSection>Projects</TitleSection>
       <div className="w-full flex justify-center">
         <div className="w-fit flex flex-col items-end gap-6">
-          <ul className="flex flex-col gap-6 items-center lg:flex-row">
-            {projectsDisplay.map((projet) => (
-              <li key={projet.id}>
+          <div className="flex flex-col gap-6 items-center lg:flex-row">
+            {projectsDisplay.map((projet, index) => (
+              <motion.div 
+                key={projet.id}
+                className="w-fit h-fit"
+                initial={{opacity: 0, y: 50}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{
+                  duration: 0.75,
+                  ease: "easeInOut",
+                  delay: width<768 ? 0 : index*0.2 
+                }}
+              >
                 <CardProject
                   id={projet.id}
                   description={projet.description}
@@ -26,9 +38,9 @@ export default function ProjectsSection() {
                 >
                   {projet.title}
                 </CardProject>
-              </li>
+              </motion.div>
             ))}
-          </ul>
+          </div>
           <Button type="primary" link="/projects">
             Tout décourvir
           </Button>

@@ -4,8 +4,11 @@ import Button from '../components/Button';
 import TitleSection from '../components/TitleSection';
 import CardProject from '../components/CardProject';
 import NotFound from './NotFound';
+import { motion } from 'motion/react';
 
 export default function Project() {
+    const width = window.innerWidth;
+
     const { projectId } = useParams()
     if (projectId === undefined) throw Error
 
@@ -47,24 +50,43 @@ export default function Project() {
                             <Button type='primary' link='/projects'>Voir les autres projets</Button>
                         </div>
                     </div>
-                    <div className="w-3/4 flex justify-center lg:w-fit">
+                    <motion.div 
+                        className="w-3/4 flex justify-center lg:w-fit"
+                        initial={{opacity: 0, y: 50}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.75,
+                            ease: "easeInOut",
+                        }}
+                    >
                         <img
-                            className="lg:max-h-[calc(60vh)] max-w-[calc(40vh)] rounded-lg"
+                            className="lg:max-h-[calc(60vh)] max-w-[calc(50vh)] rounded-lg"
                             src={projet?.img}
                             alt=""
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='md:hidden w-full flex justify-center'>
                     <Button type='primary' link='/projects'>Voir les autres projets</Button>
                 </div>
             </div>
 
-            <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-6 py-3'>
                 <TitleSection>Voir quelques autres projets.</TitleSection>
-                <div className='flex flex-col gap-6 w-full items-center md:flex-row'>
-                    {otherProjects.map((projet) => (
-                        <CardProject key={projet.id} id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
+                <div className='flex flex-col gap-6 w-full items-center md:flex-row md:justify-center'>
+                    {otherProjects.map((projet, index) => (
+                        <motion.div
+                            key={projet.id}
+                            initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{
+                            duration: 0.75,
+                            ease: "easeInOut",
+                            delay: width<768 ? 0 : index*0.2 
+                            }}
+                        >
+                            <CardProject id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
+                        </motion.div>
                     ))}
                 </div>
             </div>

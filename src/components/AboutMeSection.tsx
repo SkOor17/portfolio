@@ -1,4 +1,5 @@
 import TitleSection from "./TitleSection";
+import { motion } from "motion/react";
 
 export default function AboutMeSection() {
   return (
@@ -12,9 +13,17 @@ export default function AboutMeSection() {
                     Grand amateur de mode, je m’intéresse particulièrement à l’univers des sneakers, où créativité et design se rencontrent. 
                     Ces passions m’inspirent dans mon travail, en combinant rigueur technique, esprit d’équipe et sens du détail pour relever chaque défi avec style et efficacité.
                 </p>
-                <div className="w-full flex justify-center md:w-fit">
+                <motion.div 
+                    className="w-full flex justify-center md:w-fit"
+                    initial={{opacity: 0, y: 50}}
+                    whileInView={{opacity: 1, y: 0}}
+                    transition={{
+                        duration: 0.75,
+                        ease: "easeInOut",
+                    }}
+                >
                     <img className="h-fit md:max-h-[calc(65vh)] max-w-[calc(40vh)] rounded-md" src="/assets/Tennis.JPG" alt="" />
-                </div>
+                </motion.div>
             </div>
         </div>
     </div>
