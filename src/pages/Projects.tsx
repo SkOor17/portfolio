@@ -37,7 +37,7 @@ export default function Projects() {
               transition={{
                 duration: 0.75,
                 ease: "easeInOut",
-                delay: width<768 ? 0 : index*0.2 
+                delay: width<768 ? 0 : index*0.1 
               }}
             >
               <CardProject  id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
@@ -57,7 +57,7 @@ export default function Projects() {
               transition={{
                 duration: 0.75,
                 ease: "easeInOut",
-                delay: width<768 ? 0 : (projetsScolaires.length-2)*0.2 + index*0.2 
+                delay: width<768 ? 0 : (projetsScolaires.length-2)*0.1 + index*0.1 
               }}
             >
               <CardProject  id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>

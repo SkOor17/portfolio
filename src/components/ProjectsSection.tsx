@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
   return (
     <div id="projects" className="flex flex-col gap-6 py-3 scroll-mt-16">
-      <TitleSection>Projects</TitleSection>
+      <TitleSection>Projects.</TitleSection>
       <div className="w-full flex justify-center">
         <div className="w-fit flex flex-col items-end gap-6">
           <div className="flex flex-col gap-6 items-center lg:flex-row">
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
                 transition={{
                   duration: 0.75,
                   ease: "easeInOut",
-                  delay: width<768 ? 0 : index*0.2 
+                  delay: width<768 ? 0 : index*0.1 
                 }}
               >
                 <CardProject

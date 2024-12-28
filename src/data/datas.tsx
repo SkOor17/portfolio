@@ -40,7 +40,7 @@ export const projects: ProjectType[] = [
         keyWords: ["Langage utilisé: Kotlin", "Durée 3 mois", "Equipe: 5 personnes"],
         category: "scolaire",
         texte: "Pendant un projet de trois mois au sein d'une équipe de cinq personnes, j'ai réalisé une adaptation du jeu Skyjo en Kotlin, en me concentrant sur la partie front-end. Ce travail m'a permis de traverser différentes phases clés : analyse des besoins pour définir les fonctionnalités essentielles, gestion de projet pour coordonner les tâches et assurer une bonne communication au sein de l'équipe, conception de l'interface utilisateur pour garantir une expérience fluide et attrayante, et enfin développement et intégration. Ce projet m'a offert une excellente opportunité de mettre en pratique des compétences en développement collaboratif, en design UX/UI, et en méthodologies agiles",
-        img: "/assets/Tennis.JPG"
+        img: "/assets/puissance4.png"
     },
     {
         id: 3,
@@ -49,7 +49,7 @@ export const projects: ProjectType[] = [
         keyWords: ["Langage utilisé: Kotlin", "Durée 3 mois", "Equipe: 5 personnes"],
         category: "scolaire",
         texte: "Pendant un projet de trois mois au sein d'une équipe de cinq personnes, j'ai réalisé une adaptation du jeu Skyjo en Kotlin, en me concentrant sur la partie front-end. Ce travail m'a permis de traverser différentes phases clés : analyse des besoins pour définir les fonctionnalités essentielles, gestion de projet pour coordonner les tâches et assurer une bonne communication au sein de l'équipe, conception de l'interface utilisateur pour garantir une expérience fluide et attrayante, et enfin développement et intégration. Ce projet m'a offert une excellente opportunité de mettre en pratique des compétences en développement collaboratif, en design UX/UI, et en méthodologies agiles",
-        img: "/assets/Tennis.JPG"
+        img: "/assets/quadtree.png"
     },
     {
         id: 4,
@@ -58,7 +58,7 @@ export const projects: ProjectType[] = [
         keyWords: ["Langage utilisé: Kotlin", "Durée 3 mois", "Equipe: 5 personnes"],
         category: "scolaire",
         texte: "Pendant un projet de trois mois au sein d'une équipe de cinq personnes, j'ai réalisé une adaptation du jeu Skyjo en Kotlin, en me concentrant sur la partie front-end. Ce travail m'a permis de traverser différentes phases clés : analyse des besoins pour définir les fonctionnalités essentielles, gestion de projet pour coordonner les tâches et assurer une bonne communication au sein de l'équipe, conception de l'interface utilisateur pour garantir une expérience fluide et attrayante, et enfin développement et intégration. Ce projet m'a offert une excellente opportunité de mettre en pratique des compétences en développement collaboratif, en design UX/UI, et en méthodologies agiles",
-        img: "/assets/Tennis.JPG"
+        img: "/assets/site.png"
     },
     {
         id: 5,
@@ -67,7 +67,7 @@ export const projects: ProjectType[] = [
         keyWords: ["Langage utilisé: Kotlin", "Durée 3 mois", "Equipe: 5 personnes"],
         category: "perso",
         texte: "Pendant un projet de trois mois au sein d'une équipe de cinq personnes, j'ai réalisé une adaptation du jeu Skyjo en Kotlin, en me concentrant sur la partie front-end. Ce travail m'a permis de traverser différentes phases clés : analyse des besoins pour définir les fonctionnalités essentielles, gestion de projet pour coordonner les tâches et assurer une bonne communication au sein de l'équipe, conception de l'interface utilisateur pour garantir une expérience fluide et attrayante, et enfin développement et intégration. Ce projet m'a offert une excellente opportunité de mettre en pratique des compétences en développement collaboratif, en design UX/UI, et en méthodologies agiles",
-        img: "/assets/Tennis.JPG"
+        img: "/assets/dashboard.png"
     },
     {
         id: 6,

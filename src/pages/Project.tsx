@@ -60,7 +60,7 @@ export default function Project() {
                         }}
                     >
                         <img
-                            className="lg:max-h-[calc(60vh)] max-w-[calc(50vh)] rounded-lg"
+                            className="lg:max-h-[calc(60vh)] w-fit rounded-lg"
                             src={projet?.img}
                             alt=""
                         />
@@ -82,7 +82,7 @@ export default function Project() {
                             transition={{
                             duration: 0.75,
                             ease: "easeInOut",
-                            delay: width<768 ? 0 : index*0.2 
+                            delay: width<768 ? 0 : index*0.1 
                             }}
                         >
                             <CardProject id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>
