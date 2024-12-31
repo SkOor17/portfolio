@@ -53,7 +53,7 @@ export default function Project() {
                         </div>
                     </div>
                     <motion.div 
-                        className="max-w-[calc(40vh)] md:max-h-[calc(65vh)] h-full flex lg:w-fit"
+                        className="max-w-[calc(40vh)] md:max-h-[calc(65vh)] h-fit flex lg:w-fit"
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{ once: true }}
@@ -63,7 +63,7 @@ export default function Project() {
                         }}
                     >
                         <img
-                            className="w-full h-full rounded-lg object-contain"
+                            className="w-full h-full rounded-lg object-cover"
                             src={projet?.img}
                             alt=""
                         />
