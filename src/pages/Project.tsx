@@ -41,8 +41,8 @@ export default function Project() {
                 <p className='title'>
                     Projet {projet?.title}
                 </p>
-                <div className='flex flex-col gap-8 items-center md:flex-row md:items-start md:gap-24 h-[60vh] min-h-fit'>
-                    <div className='md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:min-h-full'> 
+                <div className='flex flex-col gap-8 items-center justify-between h-[60vh] min-h-fit md:justify-normal md:flex-row md:items-start md:gap-24'>
+                    <div className='flex w-full md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:min-h-full'> 
                         <div className='space-y-3'>
                             {projet?.texte.map((str, index) => (
                                 <p key={index}>{str}</p>
