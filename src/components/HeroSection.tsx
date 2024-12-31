@@ -22,8 +22,9 @@ export default function HeroSection() {
         </div>
         <motion.div 
           className="w-3/4 flex justify-center lg:w-fit"
-          initial={{opacity: 0, y: 50}}
-          whileInView={{opacity: 1, y: 0}}
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          viewport={{ once: true }}
           transition={{
               duration: 0.75,
               ease: "easeInOut",

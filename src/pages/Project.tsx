@@ -36,31 +36,34 @@ export default function Project() {
     
 
     return (
-        <div className='flex flex-col py-6 gap-8 h-full'>
-            <div className='flex flex-col gap-8 h-full'>
+        <div className='flex flex-col py-6 gap-8'>
+            <div className='flex flex-col gap-8'>
                 <p className='title'>
                     Projet {projet?.title}
                 </p>
-                <div className='flex flex-col gap-8 items-center md:flex-row md:items-start md:gap-24'>
-                    <div className='md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:justify-between'> 
-                        <div>
-                            {projet?.texte} 
+                <div className='flex flex-col gap-8 items-center md:flex-row md:items-start md:gap-24 h-[60vh] min-h-fit'>
+                    <div className='md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:min-h-full'> 
+                        <div className='space-y-3'>
+                            {projet?.texte.map((str, index) => (
+                                <p key={index}>{str}</p>
+                            ))} 
                         </div>
-                        <div className='hidden md:block'>
+                        <div className='hidden md:block md:mt-auto'>
                             <Button type='primary' link='/projects'>Voir les autres projets</Button>
                         </div>
                     </div>
                     <motion.div 
                         className="w-3/4 flex justify-center lg:w-fit"
-                        initial={{opacity: 0, y: 50}}
-                        whileInView={{opacity: 1, y: 0}}
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        viewport={{ once: true }}
                         transition={{
                             duration: 0.75,
                             ease: "easeInOut",
                         }}
                     >
                         <img
-                            className="lg:max-h-[calc(60vh)] w-fit rounded-lg"
+                            className="max-h-[calc(60vh)] w-fit rounded-lg"
                             src={projet?.img}
                             alt=""
                         />
@@ -77,12 +80,13 @@ export default function Project() {
                     {otherProjects.map((projet, index) => (
                         <motion.div
                             key={projet.id}
-                            initial={{opacity: 0, y: 50}}
+                            initial={{opacity: 0, y: 30}}
                             whileInView={{opacity: 1, y: 0}}
+                            viewport={{ once: true }}
                             transition={{
-                            duration: 0.75,
-                            ease: "easeInOut",
-                            delay: width<768 ? 0 : index*0.1 
+                                duration: 0.75,
+                                ease: "easeInOut",
+                                delay: width<768 ? 0 : index*0.1 
                             }}
                         >
                             <CardProject id={projet.id} description={projet.description} keyWords={projet.keyWords}>{projet.title}</CardProject>

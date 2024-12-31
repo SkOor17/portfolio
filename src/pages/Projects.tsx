@@ -32,8 +32,9 @@ export default function Projects() {
           {projetsScolaires.map((projet, index) => (
             <motion.div
               key={projet.id}
-              initial={{opacity: 0, y: 50}}
+              initial={{opacity: 0, y: 30}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{ once: true }}
               transition={{
                 duration: 0.75,
                 ease: "easeInOut",
@@ -52,8 +53,9 @@ export default function Projects() {
           {projetsPerso.map((projet, index) => (
             <motion.div
               key={projet.id}
-              initial={{opacity: 0, y: 50}}
+              initial={{opacity: 0, y: 30}}
               whileInView={{opacity: 1, y: 0}}
+              viewport={{ once: true }}
               transition={{
                 duration: 0.75,
                 ease: "easeInOut",
