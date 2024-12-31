@@ -63,7 +63,7 @@ export default function Project() {
                         }}
                     >
                         <img
-                            className="max-h-[calc(60vh)] w-fit rounded-lg"
+                            className="max-h-[calc(60vh)] w-fit rounded-lg object-contain"
                             src={projet?.img}
                             alt=""
                         />
