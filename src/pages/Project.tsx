@@ -53,7 +53,7 @@ export default function Project() {
                         </div>
                     </div>
                     <motion.div 
-                        className="w-3/4 flex justify-center lg:w-fit"
+                        className="max-w-3/4 flex justify-center lg:max-w-fit"
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{ once: true }}
