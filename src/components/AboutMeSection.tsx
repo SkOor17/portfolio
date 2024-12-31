@@ -19,7 +19,7 @@ export default function AboutMeSection() {
                         </p>
                     </div>
                     <motion.div 
-                        className="w-full flex md:w-fit"
+                        className="w-full h-full flex lg:w-fit "
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{ once: true }}
@@ -28,7 +28,7 @@ export default function AboutMeSection() {
                             ease: "easeInOut",
                         }}
                     >
-                        <img className="h-fit md:max-h-[calc(65vh)] max-w-[calc(40vh)] rounded-md" src="/assets/Tennis.JPG" alt="" />
+                        <img className="h-fit max-w-[calc(40vh)] md:max-h-[calc(65vh)] rounded-md object-contain" src="/assets/Tennis.JPG" alt="" />
                     </motion.div>
                 </div>
             </div>
