@@ -11,11 +11,11 @@ export default function AboutMeSection() {
                     <div className="max-w-[300px] space-y-3">
                         <p>
                             Développeur logiciel passionné, je m’efforce de transformer des idées innovantes en solutions concrètes et performantes.
-                            En dehors de l’univers du code, je puise mon énergie dans le sport, notamment le tennis, qui m’enseigne discipline et stratégie. 
+                            En dehors de l’univers du code, j'aime utiliser mon énergie dans le sport, notamment le tennis, qui me permet de travailler sur ma discipline et ma rigueur. 
                         </p>
                         <p>
-                            Grand amateur de mode, je m’intéresse particulièrement à l’univers des sneakers, où créativité et design se rencontrent. 
-                            Ces passions m’inspirent dans mon travail, en combinant rigueur technique, esprit d’équipe et sens du détail pour relever chaque défi avec style et efficacité.
+                            De plus, je m’intéresse particulièrement à l’univers des sneakers et de la mode. 
+                            Ces passions m’inspirent dans mon travail, en combinant rigueur technique, esprit d’équipe et sens du détail pour relever chaque défi avec efficacité.
                         </p>
                     </div>
                     <motion.div 
