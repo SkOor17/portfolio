@@ -5,10 +5,10 @@ export default function AboutMeSection() {
 
     return (
         <div id="about" className="scroll-mt-16 py-3">
-            <TitleSection>About me.</TitleSection>
+            <TitleSection>A propos de moi.</TitleSection>
             <div className="flex w-full justify-center">
                 <div className="flex flex-col py-6 gap-6 w-fit h-fit md:flex-row md:justify-center md:gap-[15vh]">
-                    <div className="max-w-[300px] space-y-3">
+                    <div className="max-w-[400px] space-y-3 text-base">
                         <p>
                             Développeur logiciel passionné, je m’efforce de transformer des idées innovantes en solutions concrètes et performantes.
                             En dehors de l’univers du code, j'aime utiliser mon énergie dans le sport, notamment le tennis, qui me permet de travailler sur ma discipline et ma rigueur. 

@@ -6,7 +6,7 @@ import SkillsSection from "../components/SkillsSection";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full px-6 bg-white">
         <HeroSection/>
         <AboutMeSection/>
         <ProjectsSection/>

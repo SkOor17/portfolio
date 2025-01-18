@@ -4,14 +4,14 @@ import { Outlet } from "react-router-dom";
 
 export default function MainLayout() {
     const links = new Map<string, string>([
-		['about', '/#about'],
-		['projects', '/#projects'],
+		['à propos', '/#about'],
+		['projets', '/#projects'],
 		['skills', '/#skills'],
-		['contact', '/#contact'],
+		['contactes', '/#contact'],
 	  ]);
     
     return (
-        <div className="px-6">
+        <div>
             <Header links={links}/>
             <main>
                 <Outlet/>
