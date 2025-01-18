@@ -12,7 +12,7 @@ export default function Projects() {
   const projetsPerso = projects.filter((projet) => projet.category==="perso")
 
   return (
-    <div className='flex flex-col py-6 gap-8'>
+    <div className='flex flex-col p-6 gap-8 bg-white'>
       <div>
         <div >
           <div className="inline-flex">
