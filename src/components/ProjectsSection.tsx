@@ -6,19 +6,14 @@ import { motion} from "motion/react";
 
 export default function ProjectsSection() {
   const width = window.innerWidth;
-  const projectsDisplay = [];
-
-  for (let index = 0; index < 3; index++) {
-    const element = projects[index];
-    projectsDisplay.push(element);
-  }
+  const projectsDisplay = projects.filter((project) => project.toDisplay);
 
   return (
     <div id="projects" className="flex flex-col gap-6 py-3 scroll-mt-16">
-      <TitleSection>Projects.</TitleSection>
+      <TitleSection>Mes projets.</TitleSection>
       <div className="w-full flex justify-center">
         <div className="w-fit flex flex-col items-end gap-6">
-          <div className="flex flex-col gap-6 items-center lg:flex-row">
+          <div className="flex flex-col gap-6 items-center xl:flex-row">
             {projectsDisplay.map((projet, index) => (
               <motion.div 
                 key={projet.id}

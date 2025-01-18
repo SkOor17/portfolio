@@ -8,7 +8,7 @@ export default function HeroSection() {
       id="hero"
       className="w-full pb-4 min-h-[calc(100vh-61px)] flex flex-col items-center justify-between"
     >
-      <div className="flex flex-col gap-6 items-center h-full w-full justify-between py-6 lg:flex-row lg:w-3/4 lg:pt-[10vh] lg:items-start">
+      <div className="flex flex-col gap-6 items-center h-full w-full justify-between py-6 xl:flex-row xl:w-3/4 xl:pt-[10vh] xl:items-start">
         <div>
           <p className="!text-custom-xl title">Bienvenue sur</p>
           <div className="inline-flex">
@@ -21,7 +21,7 @@ export default function HeroSection() {
           </div>
         </div>
         <motion.div 
-          className="w-3/4 flex justify-center lg:w-fit"
+          className="w-3/4 flex justify-center xl:w-fit"
           initial={{opacity: 0}}
           whileInView={{opacity: 1}}
           viewport={{ once: true }}
@@ -31,13 +31,13 @@ export default function HeroSection() {
           }}
         >
           <img
-            className="h-full lg:max-h-[calc(60vh)] max-w-[calc(40vh)] rounded-lg"
+            className="h-full xl:max-h-[calc(60vh)] max-w-[calc(40vh)] rounded-lg"
             src="/assets/heroImg.jpg"
             alt=""
           />
         </motion.div>
       </div>
-      <div className="max-w-[calc(40vh)] w-full lg:max-w-none lg:w-3/4 pb-6 flex justify-end items-center">
+      <div className="max-w-[calc(40vh)] w-full xl:max-w-none xl:w-3/4 pb-6 flex justify-end items-center">
         <Button link="/#about" type="primary">
           About me
         </Button>
