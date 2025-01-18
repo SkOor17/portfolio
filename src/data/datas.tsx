@@ -14,7 +14,9 @@ export type ProjectType = {
     keyWords: Array<string>,
     category: "perso" | "scolaire",
     texte: Array<string>,
-    img: string
+    img: string,
+    link?: string,
+    toDisplay?: boolean,
 }
 
 type Skill = {
@@ -35,7 +37,8 @@ export const projects: ProjectType[] = [
             "Pendant un projet de trois mois au sein d'une équipe de cinq personnes, j'ai réalisé une adaptation du jeu Skyjo en Kotlin, en me concentrant sur la partie front-end. Ce travail m'a permis de traverser différentes phases clés : analyse des besoins pour définir les fonctionnalités essentielles, gestion de projet pour coordonner les tâches et assurer une bonne communication au sein de l'équipe, conception de l'interface utilisateur pour garantir une expérience fluide et attrayante, et enfin développement et intégration.", 
             "Ce projet m'a offert une excellente opportunité de mettre en pratique des compétences en développement collaboratif, en design UX/UI, et en méthodologies agiles"
         ],
-        img: "/assets/Skyjo.png"
+        img: "/assets/Skyjo.png",
+        toDisplay: true
     },
     {
         id: 2,
@@ -47,7 +50,8 @@ export const projects: ProjectType[] = [
             "Ce projet est un puissance 4 en réseaux. Travailler sur ce jeu m'a permit d'apprendre à utiliser et à comprendre le concept des goroutines en Go mais aussi de continuer à travailler en collaboration avec Git.",
             "Les principaux objectifs de ce projet était d'éviter tout deadlock ou race-condition pour permettre de jouer sans aucun problème au jeu sur différentes machines. Nous avons donc dû mettre en place un protocole de communication entre les clients et le serveur pour ensuite l'implémenter en Go."
         ],
-        img: "/assets/puissance4.png"
+        img: "/assets/puissance4.png",
+        toDisplay: true
     },
     {
         id: 3,
@@ -61,7 +65,7 @@ export const projects: ProjectType[] = [
             "La première partie de ce projet était donc de se familiariser avec le langage Go ainsi qu'avec les algorithmes récursifs pour pouvoir faire l'algorithme du quadtree. C'étatit aussi la première fois, pour moi, d'utiliser git et de travailler en équipe. Nous avons aussi dû réaliser par la suite des tests pour valider le bon fonctionnement des algorithmes de génération.",
             "La deuxième partie de ce projet était plus libre. Nous avons dû réaliser différentes extensions de notre choix pour développer des choses un peu plus complexes. Par exemple, nous avons réalisé un système de téléportation, de sélection de personage, d'animation. En plus nous avons ajouté un système qui nous permet de placer des objets et d'apater les styles des cases en fonctions des ce qui l'entourait."
         ],
-        img: "/assets/quadtree.png"
+        img: "/assets/quadtree.png",
     },
     {
         id: 4,
@@ -97,8 +101,8 @@ export const projects: ProjectType[] = [
         category: "perso",
         texte: 
         [
-            "J'ai utilisé Vite.js avec React pour réaliser ce portfolio.",
-            "Le choix de ce framework et de cette bibliothèque est de pouvoir maintenir facilement et rapidement le site pour pouvoir ajouter au fur et à mesure tous les projets que je réalise dans le but de montrer mes compétences en développement logiciel."
+            "J'ai conçu ce portfolio en utilisant Vite.js avec React, un duo technologique performant et moderne.",
+            "Ce choix me permet de maintenir le site de manière simple et efficace, tout en facilitant l'ajout progressif de mes projets. Ainsi, je peux régulièrement enrichir ce portfolio pour mettre en valeur mes compétences en développement logiciel."
         ],
         img: "/assets/portfolio.png"
     },
@@ -114,6 +118,27 @@ export const projects: ProjectType[] = [
             "Le but de ce petit projet est de réaliser quelque chose de concret pour valider mes compétences en JavaScript mais aussi pour avoir une première approche de la POO (programmation orientée objet) dans ce langage. De plus, j'ai aussi appris à manipuler le DOM pour réaliser ce projet."
         ],
         img: "/assets/snake.png"
+    },
+    {
+        id: 8,
+        title: "TassElysium",
+        description: "Un site web de vente de boissons chaudes.",
+        keyWords: [
+            "Langages utilisés: PHP, TypeScript",
+            "Frameworks: Symfony, Vite.js",
+            "Durée: 5 mois",
+            "Equipe: 2 personnes"
+        ],
+        category: "scolaire",
+        texte: 
+        [
+            "TassElysium est un site web développé dans le cadre d’un projet scolaire de cinq mois, réalisé en équipe de cinq personnes. Ce projet avait pour objectif de concevoir et de livrer une application fonctionnelle en suivant un processus complet de développement. Le back-end, développé avec Symfony, offre une API REST robuste, tandis que le front-end, conçu avec Vite.js, TypeScript et Tailwind CSS, propose une interface moderne et réactive.",
+            "Chaque étape du projet a été rigoureusement menée, de la communication initiale et de l’analyse des besoins à la conception, en passant par le développement et la gestion du projet. Nous avons élaboré des diagrammes UML pour structurer efficacement l’application et avons intégré des design patterns tels que le State Pattern afin d’assurer une architecture solide et évolutive. Une attention particulière a été accordée au travail d’équipe et à la répartition des tâches, avec un suivi constant de l'avanceent du projet",
+            "À la fin du projet, une analyse critique a été réalisée pour identifier les succès et les points à améliorer. Cette expérience nous a permis de consolider nos compétences en développement web, en gestion de projet et en résolution de problèmes techniques dans un cadre collaboratif.",
+        ],
+        img: "/assets/tasselysium.png",
+        link: "https://tasselysium.noknok.dev/#/",
+        toDisplay: true
     },
 ]
 

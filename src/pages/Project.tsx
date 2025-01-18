@@ -43,7 +43,7 @@ export default function Project() {
                 </p>
                 <div className='flex flex-col gap-8 items-center justify-between min-h-fit md:justify-normal md:flex-row md:items-start md:gap-24'>
                     <div className='flex w-full md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:min-h-full'> 
-                        <div className='space-y-3'>
+                        <div className='space-y-3 text-base'>
                             {projet?.texte.map((str, index) => (
                                 <p key={index}>{str}</p>
                             ))} 
