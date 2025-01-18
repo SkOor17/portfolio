@@ -11,7 +11,7 @@ export default function MainLayout() {
 	  ]);
     
     return (
-        <div className="px-6">
+        <div>
             <Header links={links}/>
             <main>
                 <Outlet/>

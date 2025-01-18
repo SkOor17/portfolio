@@ -36,7 +36,7 @@ export default function Project() {
     
 
     return (
-        <div className='flex flex-col py-6 gap-8'>
+        <div className='flex flex-col p-6 gap-8 bg-white'>
             <div className='flex flex-col gap-8'>
                 <p className='title'>
                     Projet {projet?.title}
