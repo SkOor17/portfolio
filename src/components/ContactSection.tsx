@@ -8,7 +8,7 @@ import EmailIcon from "../assets/EmailIcon";
 export default function ContactSection() {
   return (
     <div id="contact" className="py-3 pb-6 flex flex-col gap-6 scroll-mt-16">
-        <TitleSection>Contactes.</TitleSection>
+        <TitleSection>Contact.</TitleSection>
         <div className="flex flex-col gap-2 w-full md:gap-6 md:flex-row md:justify-center">
             <div className="flex flex-col gap-2">
                 <div className="w-fit flex gap-2 items-center">

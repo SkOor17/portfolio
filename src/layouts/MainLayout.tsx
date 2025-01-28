@@ -7,7 +7,7 @@ export default function MainLayout() {
 		['à propos', '/#about'],
 		['projets', '/#projects'],
 		['skills', '/#skills'],
-		['contactes', '/#contact'],
+		['contact', '/#contact'],
 	  ]);
     
     return (
