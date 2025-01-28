@@ -12,7 +12,7 @@ export default function CardProject({
   keyWords: Array<string>;
 }) {
   return (
-    <div className="bg-secondary px-6 py-4 flex flex-col justify-between gap-6 min-w-[300px] max-w-[350px] h-[275px] rounded-xl drop-shadow-md transition-all duration-300 hover:scale-[1.02]">
+    <div className="bg-secondary px-6 py-4 flex flex-col justify-between gap-6 min-w-[350px] max-w-[350px] h-[275px] rounded-xl drop-shadow-md transition-all duration-300 hover:scale-[1.02]">
       <div className="flex flex-col gap-3 h-fit">
         <div className="title text-primary">{children}</div>
         <div className="text-black/50">{description}</div>
