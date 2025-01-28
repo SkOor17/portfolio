@@ -60,7 +60,7 @@ export default function Project() {
                         </div>
                     </div>
                     <motion.div 
-                        className="max-w-[calc(40vh)] md:max-w-none md:max-h-[calc(65vh)] min-h-fit flex lg:w-fit"
+                        className="max-w-[calc(100vh)] md:w-[calc(25vh)] md:max-h-[calc(65vh)] min-h-fit flex lg:w-fit"
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{ once: true }}
