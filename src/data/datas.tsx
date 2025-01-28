@@ -91,7 +91,8 @@ export const projects: ProjectType[] = [
             "Ce projet à été réalisé en suivant le tutoriel de Vercel. Il permet d'apprendre à développer une application fullstack de gestions de factures en utilisant une database, avec un système de compte et de connexions.", 
             "Grâce à ce tutoriel j'ai pu comprendre plusieurs principes de Next et comment optimiser l'application de la meilleure manière. De plus j'ai appris à déployer l'application avec Vercel et à utiliser des bases de données pour gérer et stocker toutes les données nécessaires pour faire foncitonner l'application. Enfin, j'ai aussi acquérit quelques connaissances en UX, par exemple pour afficher en avance des modèle en attendant que les données soient récupérées de la base de données."
         ],
-        img: "/assets/dashboard.png"
+        img: "/assets/dashboard.png",
+        link: "https://nextjs-dashboard-sooty-two-16.vercel.app/"
     },
     {
         id: 6,
@@ -139,6 +140,24 @@ export const projects: ProjectType[] = [
         img: "/assets/tasselysium.png",
         link: "https://tasselysium.noknok.dev/#/",
         toDisplay: true
+    },
+    {
+        id: 9,
+        title: "Melody-odyssey",
+        description: "Un jeu vidéo réalisé durant une Game jam",
+        keyWords: [
+            "Moteur utilisé: Godot",
+            "Durée: 30 heures",
+            "Equipe: 6 personnes"
+        ],
+        category: "perso",
+        texte: 
+        [
+            "Lors d'une game jam intense de 30 heures, j'ai eu l'opportunité de développer un jeu vidéo au sein d'une équipe de 6 personnes, une expérience qui m'a permis d'acquérir et de renforcer de nombreuses compétences. Nous avons dû gérer efficacement la pression du temps, prioriser les tâches et collaborer étroitement pour respecter les délais serrés. J'ai également appris à utiliser le moteur de jeu Godot, en m'adaptant rapidement à ses fonctionnalités et en contribuant à la création d'un prototype fonctionnel.",
+            "Cette expérience m'a permis de développer mes compétences en résolution de problèmes, en communication d'équipe et en gestion de projet, tout en renforçant ma capacité à travailler sous contraintes techniques et temporelles."
+        ],
+        img: "/assets/melody_odyssey.png",
+        link: "https://koriaaaaaaaaaaa.itch.io/melody-odyssey",
     },
 ]
 
