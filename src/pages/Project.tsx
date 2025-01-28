@@ -41,19 +41,26 @@ export default function Project() {
                 <p className='title'>
                     Projet {projet?.title}
                 </p>
-                <div className='flex flex-col gap-8 items-center justify-between min-h-fit md:justify-normal md:flex-row md:items-start md:gap-24'>
+                <div className='flex flex-col gap-8 items-center justify-between min-h-fit md:justify-normal md:flex-row md:items-start md:gap-24 md:min-h-fit'>
                     <div className='flex w-full md:w-[calc(75vh)] md:gap-6 md:flex md:flex-col md:min-h-full'> 
                         <div className='space-y-3 text-base'>
                             {projet?.texte.map((str, index) => (
                                 <p key={index}>{str}</p>
                             ))} 
                         </div>
-                        <div className='hidden md:block md:mt-auto'>
-                            <Button type='primary' link='/projects'>Voir les autres projets</Button>
+                        <div className='flex flex-col gap-2'>
+                            {projet.link && 
+                                <div className='hidden md:block md:mt-auto w-fit'>
+                                    <Button type='secondary' link={projet.link}>Accéder</Button>
+                                </div>
+                            }
+                            <div className='hidden md:block md:mt-auto w-fit'>
+                                <Button type='primary' link='/projects'>Voir les autres projets</Button>
+                            </div> 
                         </div>
                     </div>
                     <motion.div 
-                        className="max-w-[calc(40vh)] md:max-h-[calc(65vh)] h-fit flex lg:w-fit"
+                        className="max-w-[calc(40vh)] md:max-w-none md:max-h-[calc(65vh)] min-h-fit flex lg:w-fit"
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{ once: true }}
@@ -63,14 +70,21 @@ export default function Project() {
                         }}
                     >
                         <img
-                            className="w-full h-full rounded-lg object-cover"
+                            className="rounded-lg object-cover"
                             src={projet?.img}
                             alt=""
                         />
                     </motion.div>
                 </div>
-                <div className='md:hidden w-full flex justify-center'>
-                    <Button type='primary' link='/projects'>Voir les autres projets</Button>
+                <div className='flex flex-col gap-2'>
+                    {projet.link && 
+                        <div className='md:hidden w-full flex justify-center'>
+                            <Button type='secondary' link={projet.link}>Accéder</Button>
+                        </div>
+                    }
+                    <div className='md:hidden w-full flex justify-center'>
+                        <Button type='primary' link='/projects'>Voir les autres projets</Button>
+                    </div>
                 </div>
             </div>
 
