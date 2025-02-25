@@ -177,7 +177,7 @@ export const projects: ProjectType[] = [
     category: "perso",
     texte: [
       "Dans le cadre de ce projet, j'ai développé un tableau Kanban en utilisant React.js et Next.js. Ce projet m'a permis de renforcer mes compétences en développement front-end et en gestion de l'état des composants.",
-      "J'ai conçu une interface utilisateur intuitive et réactive, permettant de créer, déplacer et supprimer des tâches facilement. L'utilisation de React.js m'a aidé à structurer le code de manière modulaire et à réutiliser les composants efficacement.",
+      "J'ai conçu une interface utilisateur intuitive et réactive, permettant de créer, déplacer et supprimer des tâches facilement. Elle permet aussi d'ajouter, de supprimer et de changer la couleur des colonnes. L'utilisation de React.js m'a aidé à structurer le code de manière modulaire et à réutiliser les composants efficacement.",
     ],
     img: "/assets/kanban.png",
   },
