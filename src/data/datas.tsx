@@ -183,9 +183,9 @@ export const projects: ProjectType[] = [
   },
   {
     id: 11,
-    title: "Systeme de connexion avec JWT",
+    title: "Systeme de connexion",
     description: "Un projet Next pour réaliser un système de connexion avec JWT",
-    keyWords: ["Framework: Next.js", "Json Web Token", "Sécurité"],
+    keyWords: ["Framework: Next.js", "Json Web Token"],
     category: "perso",
     texte: [
       "Dans le cadre de ce projet, j'ai développé un système de connexion sécurisé en utilisant Next.js et Json Web Token (JWT). Ce projet m'a permis de comprendre les principes de base de l'authentification et de la sécurité des données.",
