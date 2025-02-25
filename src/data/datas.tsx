@@ -181,6 +181,19 @@ export const projects: ProjectType[] = [
     ],
     img: "/assets/kanban.png",
   },
+  {
+    id: 11,
+    title: "Systeme de connexion avec JWT",
+    description: "Un projet Next pour réaliser un système de connexion avec JWT",
+    keyWords: ["Framework: Next.js", "Json Web Token", "Sécurité"],
+    category: "perso",
+    texte: [
+      "Dans le cadre de ce projet, j'ai développé un système de connexion sécurisé en utilisant Next.js et Json Web Token (JWT). Ce projet m'a permis de comprendre les principes de base de l'authentification et de la sécurité des données.",
+      "J'ai mis en place un système de connexion et d'inscription, avec une gestion des sessions et des tokens JWT en fonction du type de compte (admin). J'ai également intégré des mécanismes de sécurité pour protéger les données sensibles comme le hashage des mots de passe.",
+      "Ce projet m'a permis de renforcer mes compétences en développement back-end, tout en me sensibilisant aux bonnes pratiques en matière de protection des données.",
+    ],
+    img: "/assets/auth-sys.png",
+  },
 ];
 
 export const skills: Skill[] = [
